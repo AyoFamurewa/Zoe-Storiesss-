@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title>About</title>
+  <link rel="stylesheet" href="stylez.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section id="Aboutbanner">
+    <img src="Images/reading-book.png" class="logo">
+    <div class="banner-text">
+    <h1>About Zoe Stories</h1>
+      <p>Through Godly stories,<br> the storeys of Godliness, faith and steadfastness<br> are being built in believers.</p>
+    </div>
+  </section>
+  <div id="SideNav">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="#">Stories</a></li>
+        <li><a href="#">Testimonies</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="MenuBtn">
+    <img src="Images/list.png" id="Menu">
+  </div>
+  
+  <script>
+  var MenuBtn = document.getElementById("MenuBtn")
+  var SideNav = document.getElementById("SideNav")
+  var Menu = document.getElementById("Menu")
+  
+  SideNav.style.right = "-250px";
+  
+  MenuBtn.onclick = function(){
+  if(SideNav.style.right == "-250px"){
+     SideNav.style.right = "0";
+    
+    Menu.src = "Images/close.png";
+  }
+  else{
+    SideNav.style.right = "-250px";
+    Menu.src = "Images/list.png";
+
+  }
+}
+  </script>
+
+</body>
+</html>
